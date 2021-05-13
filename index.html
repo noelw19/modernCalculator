@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    <title>The Modern Calculator</title>
+</head>
+<body>
+    <h1>The Modern Calculator</h1>
+
+    <div class='calcOuterEdge'>
+        
+            <div class='left'>
+                <p class='leftTitle'>Enter equations below</p>
+                <textarea class='input calcFont' id='input1' name='input1' placeholder="Try 'Jack has 2 apples + mary has 2'" contenteditable='true'></textarea>
+            </div>
+    
+            <div class='right'>
+            <p class='rightTitle'>Results: </p>
+            <ul class='calcFont' id='results'></ul>
+            </div>
+
+    </div>
+    <div class='btnContainer'>
+
+        <button class='slideAnimate' onclick="copyAll()">Copy All</button>
+    
+    </div>
+    <p class='helpText bounceAnimate'>Type sentences for refference and the calculator automatically picks up embedded equations in the text and returns the results.</br> <span class='helpTxt1'>Click below to copy both sentences and result in pretty format.</span></p>
+
+<script src='./app.js'></script>
+</body>
+</html>
